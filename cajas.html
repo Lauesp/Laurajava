@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head id="cuerpo1">
+	<meta charset="utf-8">
+	<title>Cajas</title>
+</head>
+<body onload="cicle();"  >
+		
+	<script>
+		var i=prompt("¿Cuantas cajas desea crear?");
+			var n=1;
+			if(i<=8)
+			{
+				while(n<=i)
+				{
+					document.write('<article id="cajav" style="background-color:#10375c">'+'<FONT COLOR="#f3c623">Caja'+n+'</FONT>'+'<article>');
+					n++;
+				}	
+			}
+			if(i>=9)
+			{
+				while(n<=i)
+				{
+					document.write('<article id="cajah" style="background-color:#f3c623">'+'<FONT COLOR="#10375c">Caja'+n+'</FONT>'+'<article>');
+					n++;
+				}
+			}
+	</script>
+
+</body>
+<a class="text" href="index.html"><font color="white">Inicio</font></a>
+
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Calculadora</title>
+</head>
+<body>
+    <textarea id="salida" cols="10" rows="5"></textarea>
+    <input class="boton" type="button" value="Suma" onclick="Suma();">
+    <input class="boton" type="button" value="Resta" onclick="Resta();">
+    <input class="boton" type="button" value="Multiplicacion" onclick="Multiplicacion();">
+    <input class="boton" type="button" value="Division" onclick="Division();">
+    <p>Realize la operecion que desee con los numeros 10 y 5</p>
+    <script type="text/javascript">
+        var n1=10; var n2=5;
+        function Suma(){
+            var z1=n1+n2;
+            document.getElementById("salida").innerHTML=z1;
+        }
+        function Resta(){
+            var z2=n1-n2;
+            document.getElementById("salida").innerHTML=z2;
+        }
+        function Multiplicacion(){
+            var z3=n1*n2;
+            document.getElementById("salida").innerHTML=z3;
+        }
+        function Division(){
+            var z4=n1/n2;
+            document.getElementById("salida").innerHTML=z4;
+        }
+    </script>
+    <a class="text" href="index.html">Inicio</a>
+</body>
+</html>
